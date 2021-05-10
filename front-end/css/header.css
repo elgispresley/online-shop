@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Ubuntu", sans-serif;
+}
+.header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 54px;
+  background: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.general {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 100px;
+  margin-left: 100px;
+  width: 100%;
+}
+.logo {
+  font-size: 15px;
+  text-align: center;
+}
+.tabs {
+  font-size: 18px;
+  text-align: center;
+}
+.link {
+  padding-left: 12px;
+  color: black;
+  text-decoration: none;
+}
+.link:hover {
+  text-decoration: underline;
+}
+.login {
+  font-size: 14px;
+}
+.login-link {
+  color: black;
+  text-decoration: none;
+}
+
+.login-link:hover {
+  text-decoration: underline;
+}

@@ -1,4 +1,6 @@
 *{
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
     font-family: 'Ubuntu', sans-serif;
 }
@@ -7,24 +9,32 @@ body{
 }
 
 .container{
-    width: 1240px;
-    height: 515px;
+    width: 1050px;
     margin: 0 auto;
-    background-color: #fff;
+    margin-top: 80px;
 }
 .wrapper{
-    padding: 25px 0 0 32px;
+    height: 500px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-left: 32px;
+    padding-top: 25px;
+    background-color: #fff;
+}
+.main-txt h1 {
+    font-size: 36px;
+    margin-bottom: 28px;
 }
 main{
-    margin-top: 25px;
-    width: 1180px;
+    width: 990px;
 }
 .main-sections{
     display: flex;
     justify-content: space-between
 }
 .box{
-    width: 250px;
+    height: 350px;
+    width: 200px;
     box-shadow: -2px 7px 28px 6px rgba(0,0,0,0.23);
     -webkit-box-shadow: -2px 7px 28px 6px rgba(0,0,0,0.23);
     -moz-box-shadow: -2px 7px 28px 6px rgba(0,0,0,0.23);
@@ -32,13 +42,20 @@ main{
     padding: 15px;
 }
 .item-box{
-    width: 220px;
+    width: 170px;
     height: 156px;
     border: 1px solid rgba(0,0,0,0.23);
 }
 .txt-box{
-    width: 220px;
     text-align: center;
+    font-size: 14px;
+}
+.name-product {
+  margin-top: 13px;
+}
+.price-product {
+    margin-top: 13px;
+  
 }
 .item-box img{
     width: 145px;
@@ -46,17 +63,18 @@ main{
 }
 .review-box{
     padding-bottom: 8px;
-    width: 220px;
     text-align: center;
+    margin-top: 16px;
 }
 .buttons-box{
-    width: 220px;
+    font-size: 14px;
+    margin-top: 5px;
     display: flex;
     justify-content: space-around;
 }
 .basked-btn{
-    width: 91px;
-    height: 40px;
+    width: 75px;
+    height: 35px;
     background-color: #034AFF;
     border-radius: 8px;
     border: none;
@@ -67,8 +85,8 @@ main{
     transform: scale(0.9);
 }
 .buy-btn{
-    width: 91px;
-    height: 40px;
+    width: 75px;
+    height: 35px;
     background-color: #07A821;
     border-radius: 8px;
     border: none;
@@ -79,3 +97,5 @@ main{
 .buy-btn:hover {
     transform: scale(0.9);
 }
+
+

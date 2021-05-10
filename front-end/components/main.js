@@ -1,56 +1,30 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/login-signup.css" />
-    <link rel="stylesheet" href="./css/header.css" />
-    <link rel="stylesheet" href="css/main.css" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      rel="shortcut icon"
-      href="http://sun9-64.userapi.com/c633622/v633622149/32657/72rurVZu_TA.jpg?ava=1"
-      type="image/png"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap"
-      rel="stylesheet"
-    />
-    <title>Online shop</title>
-  </head>
-  <body>
-    <header class="header">
-      <div id="products">
-
+const $root = document.getElementById('root')
+$root.innerHTML = `
+<header class="header">
+        <div class="general">
+      <div class="logo-box">
+        <h1 class="logo">optimus <br />market</h1>
       </div>
-      <div class="general">
-        <div class="logo-box">
-          <h1 class="logo">optimus <br />market</h1>
-        </div>
-        <div class="tabs">
-          <a class="link" href="./index.html">Главная</a>
-          <a class="link" href="./pages/categories.html">Категории</a>
-          <a class="link" href="./pages/aboutus.html">О нас</a>
-          <a class="link" href="./pages/basket.html">Корзина</a>
-          <a class="link" href="./pages/sales.html">Скидки</a>
-        </div>
-        <div class="login">
-          <a class="login-link" href="#login">Войти</a>
-        </div>
-        <div id="login">
-          <h3 class="entry-h3">Вход</h3>
-          <a href="#" class="close">Закрыть</a>
-          <input class="login-input" type="text" placeholder="Логин" />
-          <input class="password-input" type="text" placeholder="Пароль" />
-          <button class="entry-btn">Войти</button>
-          <a class="forgot-pswrd" href="./pages/password.html"
-            >Забыли пароль?</a
-          >
-          <button class="regist-btn">Зарегистрироваться</button>
-        </div>
+      <div class="tabs">
+        <a class="link" href="../index.html">Главная</a>
+        <a class="link" href="../pages/categories.html">Категории</a>
+        <a class="link" href="../pages/aboutus.html">О нас</a>
+        <a class="link" href="../pages/basket.html">Корзина</a>
+        <a class="link" href="../pages/sales.html">Скидки</a>
+      </div>  
+      <div class="login">
+           <a class="login-link" href="#login">Войти</a>
       </div>
+      <div id="login">
+        <h3 class="entry-h3">Вход</h3>
+        <a href="#" class="close">Закрыть</a>
+        <input class="login-input" type="text" placeholder="Логин">
+        <input class="password-input" type="text" placeholder="Пароль">
+        <button class="entry-btn">Войти</button>
+        <a class="forgot-pswrd" href="./pages/password.html">Забыли пароль?</a>
+        <button class="regist-btn">Зарегистрироваться</button>
+      </div>
+    </div>
     </header>
     <div class="container">
       <div class="wrapper">
@@ -61,17 +35,17 @@
           <div class="main-sections">
             <div class="box">
               <div class="item-box">
-                <img src="./images/pic.png" alt="" />
+                <img src="../images/pic.png" alt="" />
               </div>
               <div class="txt-box">
                 <p class="name-product">Наушники "Air Pods"</p>
                 <p class="price-product">1000 с</p>
               </div>
               <div class="review-box">
-                <img src="./images/Vector.png" alt="" />
-                <img src="./images/Vector.png" alt="" />
-                <img src="./images/Vector.png" alt="" />
-                <img src="./images/Vector.png" alt="" />
+                <img src="../images/Vector.png" alt="" />
+                <img src="../images/Vector.png" alt="" />
+                <img src="../images/Vector.png" alt="" />
+                <img src="../images/Vector.png" alt="" />
               </div>
               <div class="buttons-box">
                 <button class="basked-btn" id="basked-button">В корзину</button>
@@ -80,17 +54,17 @@
             </div>
             <div class="box">
               <div class="item-box">
-                <img src="./images/pic.png" alt="" />
+                <img src="../images/pic.png" alt="" />
               </div>
               <div class="txt-box">
                 <p class="name-product">Наушники "Air Pods"</p>
                 <p class="price-product">1000 c</p>
               </div>
               <div class="review-box">
-                <img src="./images/Vector.png" alt="" />
-                <img src="./images/Vector.png" alt="" />
-                <img src="./images/Vector.png" alt="" />
-                <img src="./images/Vector.png" alt="" />
+                <img src="../images/Vector.png" alt="" />
+                <img src="../images/Vector.png" alt="" />
+                <img src="../images/Vector.png" alt="" />
+                <img src="../images/Vector.png" alt="" />
               </div>
               <div class="buttons-box">
                 <button class="basked-btn" id="basked-button">В корзину</button>
@@ -99,17 +73,17 @@
             </div>
             <div class="box">
               <div class="item-box">
-                <img src="./images/pic.png" alt="" />
+                <img src="../images/pic.png" alt="" />
               </div>
               <div class="txt-box">
                 <p class="name-product">Наушники "Air Pods"</p>
                 <p class="price-product">1000 c</p>
               </div>
               <div class="review-box">
-                <img src="./images/Vector.png" alt="" />
-                <img src="./images/Vector.png" alt="" />
-                <img src="./images/Vector.png" alt="" />
-                <img src="./images/Vector.png" alt="" />
+                <img src="../images/Vector.png" alt="" />
+                <img src="../images/Vector.png" alt="" />
+                <img src="../images/Vector.png" alt="" />
+                <img src="../images/Vector.png" alt="" />
               </div>
               <div class="buttons-box">
                 <button class="basked-btn" id="basked-button">В корзину</button>
@@ -118,17 +92,17 @@
             </div>
             <div class="box">
               <div class="item-box">
-                <img src="./images/pic.png" alt="" />
+                <img src="../images/pic.png" alt="" />
               </div>
               <div class="txt-box">
                 <p class="name-product">Наушники "Air Pods"</p>
                 <p class="price-product">1000 c</p>
               </div>
               <div class="review-box">
-                <img src="./images/Vector.png" alt="" />
-                <img src="./images/Vector.png" alt="" />
-                <img src="./images/Vector.png" alt="" />
-                <img src="./images/Vector.png" alt="" />
+                <img src="../images/Vector.png" alt="" />
+                <img src="../images/Vector.png" alt="" />
+                <img src="../images/Vector.png" alt="" />
+                <img src="../images/Vector.png" alt="" />
               </div>
               <div class="buttons-box">
                 <button class="basked-btn" id="basked-button">В корзину</button>
@@ -146,17 +120,17 @@
           <div class="main-sections">
             <div class="box">
               <div class="item-box">
-                <img src="./images/pic.png" alt="" />
+                <img src="../images/pic.png" alt="" />
               </div>
               <div class="txt-box">
                 <p class="name-product">Наушники "Air Pods"</p>
                 <p class="price-product">1000 с</p>
               </div>
               <div class="review-box">
-                <img src="./images/Vector.png" alt="" />
-                <img src="./images/Vector.png" alt="" />
-                <img src="./images/Vector.png" alt="" />
-                <img src="./images/Vector.png" alt="" />
+                <img src="../images/Vector.png" alt="" />
+                <img src="../images/Vector.png" alt="" />
+                <img src="../images/Vector.png" alt="" />
+                <img src="../images/Vector.png" alt="" />
               </div>
               <div class="buttons-box">
                 <button class="basked-btn" id="basked-button">В корзину</button>
@@ -165,17 +139,17 @@
             </div>
             <div class="box">
               <div class="item-box">
-                <img src="./images/pic.png" alt="" />
+                <img src="../images/pic.png" alt="" />
               </div>
               <div class="txt-box">
                 <p class="name-product">Наушники "Air Pods"</p>
                 <p class="price-product">1000 c</p>
               </div>
               <div class="review-box">
-                <img src="./images/Vector.png" alt="" />
-                <img src="./images/Vector.png" alt="" />
-                <img src="./images/Vector.png" alt="" />
-                <img src="./images/Vector.png" alt="" />
+                <img src="../images/Vector.png" alt="" />
+                <img src="../images/Vector.png" alt="" />
+                <img src="../images/Vector.png" alt="" />
+                <img src="../images/Vector.png" alt="" />
               </div>
               <div class="buttons-box">
                 <button class="basked-btn" id="basked-button">В корзину</button>
@@ -184,17 +158,17 @@
             </div>
             <div class="box">
               <div class="item-box">
-                <img src="./images/pic.png" alt="" />
+                <img src="../images/pic.png" alt="" />
               </div>
               <div class="txt-box">
                 <p class="name-product">Наушники "Air Pods"</p>
                 <p class="price-product">1000 c</p>
               </div>
               <div class="review-box">
-                <img src="./images/Vector.png" alt="" />
-                <img src="./images/Vector.png" alt="" />
-                <img src="./images/Vector.png" alt="" />
-                <img src="./images/Vector.png" alt="" />
+                <img src="../images/Vector.png" alt="" />
+                <img src="../images/Vector.png" alt="" />
+                <img src="../images/Vector.png" alt="" />
+                <img src="../images/Vector.png" alt="" />
               </div>
               <div class="buttons-box">
                 <button class="basked-btn" id="basked-button">В корзину</button>
@@ -203,17 +177,17 @@
             </div>
             <div class="box">
               <div class="item-box">
-                <img src="./images/pic.png" alt="" />
+                <img src="../images/pic.png" alt="" />
               </div>
               <div class="txt-box">
                 <p class="name-product">Наушники "Air Pods"</p>
                 <p class="price-product">1000 c</p>
               </div>
               <div class="review-box">
-                <img src="./images/Vector.png" alt="" />
-                <img src="./images/Vector.png" alt="" />
-                <img src="./images/Vector.png" alt="" />
-                <img src="./images/Vector.png" alt="" />
+                <img src="../images/Vector.png" alt="" />
+                <img src="../images/Vector.png" alt="" />
+                <img src="../images/Vector.png" alt="" />
+                <img src="../images/Vector.png" alt="" />
               </div>
               <div class="buttons-box">
                 <button class="basked-btn" id="basked-button">В корзину</button>
@@ -231,17 +205,17 @@
           <div class="main-sections">
             <div class="box">
               <div class="item-box">
-                <img src="./images/pic.png" alt="" />
+                <img src="../images/pic.png" alt="" />
               </div>
               <div class="txt-box">
                 <p class="name-product">Наушники "Air Pods"</p>
                 <p class="price-product">1000 с</p>
               </div>
               <div class="review-box">
-                <img src="./images/Vector.png" alt="" />
-                <img src="./images/Vector.png" alt="" />
-                <img src="./images/Vector.png" alt="" />
-                <img src="./images/Vector.png" alt="" />
+                <img src="../images/Vector.png" alt="" />
+                <img src="../images/Vector.png" alt="" />
+                <img src="../images/Vector.png" alt="" />
+                <img src="../images/Vector.png" alt="" />
               </div>
               <div class="buttons-box">
                 <button class="basked-btn" id="basked-button">В корзину</button>
@@ -250,17 +224,17 @@
             </div>
             <div class="box">
               <div class="item-box">
-                <img src="./images/pic.png" alt="" />
+                <img src="../images/pic.png" alt="" />
               </div>
               <div class="txt-box">
                 <p class="name-product">Наушники "Air Pods"</p>
                 <p class="price-product">1000 c</p>
               </div>
               <div class="review-box">
-                <img src="./images/Vector.png" alt="" />
-                <img src="./images/Vector.png" alt="" />
-                <img src="./images/Vector.png" alt="" />
-                <img src="./images/Vector.png" alt="" />
+                <img src="../images/Vector.png" alt="" />
+                <img src="../images/Vector.png" alt="" />
+                <img src="../images/Vector.png" alt="" />
+                <img src="../images/Vector.png" alt="" />
               </div>
               <div class="buttons-box">
                 <button class="basked-btn" id="basked-button">В корзину</button>
@@ -269,17 +243,17 @@
             </div>
             <div class="box">
               <div class="item-box">
-                <img src="./images/pic.png" alt="" />
+                <img src="../images/pic.png" alt="" />
               </div>
               <div class="txt-box">
                 <p class="name-product">Наушники "Air Pods"</p>
                 <p class="price-product">1000 c</p>
               </div>
               <div class="review-box">
-                <img src="./images/Vector.png" alt="" />
-                <img src="./images/Vector.png" alt="" />
-                <img src="./images/Vector.png" alt="" />
-                <img src="./images/Vector.png" alt="" />
+                <img src="../images/Vector.png" alt="" />
+                <img src="../images/Vector.png" alt="" />
+                <img src="../images/Vector.png" alt="" />
+                <img src="../images/Vector.png" alt="" />
               </div>
               <div class="buttons-box">
                 <button class="basked-btn" id="basked-button">В корзину</button>
@@ -288,17 +262,17 @@
             </div>
             <div class="box">
               <div class="item-box">
-                <img src="./images/pic.png" alt="" />
+                <img src="../images/pic.png" alt="" />
               </div>
               <div class="txt-box">
                 <p class="name-product">Наушники "Air Pods"</p>
                 <p class="price-product">1000 c</p>
               </div>
               <div class="review-box">
-                <img src="./images/Vector.png" alt="" />
-                <img src="./images/Vector.png" alt="" />
-                <img src="./images/Vector.png" alt="" />
-                <img src="./images/Vector.png" alt="" />
+                <img src="../images/Vector.png" alt="" />
+                <img src="../images/Vector.png" alt="" />
+                <img src="../images/Vector.png" alt="" />
+                <img src="../images/Vector.png" alt="" />
               </div>
               <div class="buttons-box">
                 <button class="basked-btn" id="basked-button">В корзину</button>
@@ -309,9 +283,5 @@
         </main>
       </div>
     </div>
-  </body>
-  <!-- <script src="ю/components/best-products.js">
-    const API_BASE_URL = 'http://vblogg.herokuapp.com/products'
-    const API_BASE_URL = 'https://vblogg.herokuapp.com/product'
-  </script> -->
-</html>
+
+`
