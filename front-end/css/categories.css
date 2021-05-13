@@ -1,0 +1,67 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Ubuntu", sans-serif;
+}
+.container-main {
+  width: 1050px;
+  margin: auto;
+  margin-top: 80px;
+  margin-bottom: 20px;
+  padding-left: 32px;
+  padding-top: 25px;
+  padding-right: 32px;
+  padding-bottom: 25px;
+  background-color: #fff;
+}
+.title {
+  font-size: 24px;
+}
+.container-ctgr {
+  display: flex;
+  justify-content: space-around;
+}
+.category {
+  margin-top: 20px;
+  width: 150px;
+  height: 110px;
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.44);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 14px;
+  cursor: pointer;
+
+  display: flex;
+  justify-content: center;
+}
+.category:hover {
+  transform: scale(0.9);
+}
+.vector-1 {
+  position: absolute;
+  margin-top: 47px;
+}
+.vector-2 {
+  position: absolute;
+  margin-top: 35px;
+}
+.name-ctgr {
+  margin-top: 60px;
+  font-size: 16px;
+}
+.title-2 {
+  margin-top: 20px;
+  font-size: 24px;
+}
+.container-recmdtion {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.recommendation {
+  width: 985px;
+}

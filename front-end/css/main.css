@@ -8,24 +8,25 @@ body{
     background-color: #E5E5E5;
 }
 
-.container{
+.container-main{
     width: 1050px;
-    margin: 0 auto;
+    margin: auto;
     margin-top: 80px;
 }
-.wrapper{
+.wrapper-main{
     height: 500px;
     margin-top: 20px;
     margin-bottom: 20px;
     padding-left: 32px;
+    padding-right: 32px;
     padding-top: 25px;
     background-color: #fff;
 }
 .main-txt h1 {
     font-size: 36px;
     margin-bottom: 28px;
-}
-main{
+}   
+.main-pg{
     width: 990px;
 }
 .main-sections{
@@ -40,6 +41,7 @@ main{
     -moz-box-shadow: -2px 7px 28px 6px rgba(0,0,0,0.23);
     text-align: center;
     padding: 15px;
+    margin-bottom: 40px;
 }
 .item-box{
     width: 170px;
@@ -95,7 +97,7 @@ main{
     
 }
 .buy-btn:hover {
-    transform: scale(0.9);
+    background-color: #07a8229d;   
 }
 
 
