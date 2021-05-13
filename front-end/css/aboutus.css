@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Ubuntu", sans-serif;
+}
+.main-aboutus {
+  margin-top: 80px;
+  background-color: white;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+.container {
+  width: 570px;
+  padding-top: 20px;
+}
+.location {
+  width: 570px;
+  height: 363px;
+  margin-bottom: 20px;
+}
+.paragraph {
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+.contact {
+    margin-top: 20px;
+}
+.contact h3 {
+    font-size: 30px;
+}
+.contact-link {
+    color: black;
+}
+.telegram {
+    margin-right: 7px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+.telegram:hover {
+    cursor: pointer;
+}
+.instagram {
+    margin-top: 10px;
+    margin-right: 10px;
+}
+.instagram:hover {
+    cursor: pointer;
+}
+.address {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
