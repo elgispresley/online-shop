@@ -9,18 +9,20 @@ body{
 }
 
 .container-main{
-    width: 1050px;
+width: 1050px;
     margin: auto;
     margin-top: 80px;
+    display: flex;
+    flex-wrap: wrap;
 }
 .wrapper-main{
-    height: 500px;
     margin-top: 20px;
     margin-bottom: 20px;
     padding-left: 32px;
     padding-right: 32px;
     padding-top: 25px;
     background-color: #fff;
+ 
 }
 .main-txt h1 {
     font-size: 36px;
@@ -74,18 +76,6 @@ body{
     display: flex;
     justify-content: space-around;
 }
-.basked-btn{
-    width: 75px;
-    height: 35px;
-    background-color: #034AFF;
-    border-radius: 8px;
-    border: none;
-    color: #fff;
-    cursor: pointer;
-}
-.basked-btn:hover {
-    transform: scale(0.9);
-}
 .buy-btn{
     width: 75px;
     height: 35px;
@@ -94,6 +84,7 @@ body{
     border: none;
     color: #fff;
     cursor: pointer;
+    
     
 }
 .buy-btn:hover {
