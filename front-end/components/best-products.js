@@ -1,59 +1,79 @@
-const $root = document.getElementById("root");
-// получили с бекенда данные
-const data = [
-  {
-    category: "Aксесуары",
-    products: [
-      {
-        id: "xjh1jhc2hj31",
-        image: "url",
-        name: "Наушники",
-        price: "1000 сом",
-        rating: 5,
-      },
-    ],
-  },
-];
+const fetchUrl = 'https://online-shoppp.herokuapp.com/api/category';
 
-$root.innerHTML = `
-      ${data
-        .map((section) => createSection(section.category, section.products))
-        .join("")}
-    `;
+async function getDataFromBac() {
+  try {
+    
+   const responce = await fetch(fetchUrl)
+   const data = await responce.json()
+   console.log(data)
+   return data
+  } catch (e) {
+   alert ('Произошла ошибка' + e.message)
+  }
+}
 
-// const BASE_URL = "http://vblogg.herokuapp.com/";
-// async function getProducts() {
-//   try {
-//     const response = await fetch(BASE_URL + "products");
-//     const data = await response.json();
 
-//     return(data);
-//   } catch (e) {
-//     alert(e.message);
-//   }
-// }
 
-// function toCard(product) {
-//   return `
-//   <div>
-//     Название: ${product.name}
-//     Категория: ${product.category}
-//     Цена: ${product.price}
-//     Рейтинг: ${product.rate}
-//     </div>
-//   `;
-// }
 
-// async function loadProductPage() {
-//   const $products = document.getElementById('products');
-//   try {
-//     const products = await getProducts()
-//     const cardsTemplate = products.map(toCard)
+function createCard(product) {
+  return `
+  <div class="box">
+    <div class="item-box">
+      <img src="${product.image}" alt="" />
+    </div>
+    <div class="txt-box">
+      <p class="name-product">${product.name}</p>
+      <p class="price-product">${product.price}</p>
+    </div>
+    <div class="review-box">
+      <img src="../images/Vector.png" alt="" />
+      <img src="../images/Vector.png" alt="" />
+      <img src="../images/Vector.png" alt="" />
+      <img src="../images/Vector.png" alt="" />
+    </div>
+    <div class="buttons-box">
+      <button class="buy-btn" id="buy-button">Купить</button>
+    </div>
+  </div>
+          `;
+}
 
-//     $products.innerHTML = cardsTemplate
-//   } catch (e){
-//     alert('Ошибка, бро', + e.message)
-//   }
-// }
+function createCategorySectionWithProducts(section) {
+  return `
+  <div class="wrapper-main">  
+    <div class="main-pg">
+      <div class="main-txt">
+        <h1>${section.category}</h1>
+      </div>
+      <div class="main-sections">
+        ${section.products.map(createCard).join('')}
+      </div>
+    </div>
+  </div>
+  `;
+}
 
-// document.addEventListener('DOMContentLoaded', loadProductPage)
+const $products = document.getElementById('products');
+
+
+
+async function loadMainPage () {
+  const data = await getDataFromBac ()
+  $products.innerHTML = data.data.map(createCategorySectionWithProducts).join('');
+
+}
+loadMainPage();
+
+// const SECTIONS_FROM_BACKEND = [
+//   {
+//     category: "Aксесуары",
+//     products: [
+//       {
+//         id: "xjh1jhc2hj31",
+//         image: "url",
+//         name: "Наушники",
+//         price: "1000 сом",
+//         rating: 5,
+//       },
+//]
+
